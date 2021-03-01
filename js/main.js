@@ -15,12 +15,11 @@ function startGame() {
         if (partitaConclusa) {
             inizializeMine();
 
-            console.log(arrayMine.sort((a,b) => a-b));
+            //console.log(arrayMine.sort((a,b) => a-b));
         }
 
 
         partitaConclusa = false;
-        continua = true;
 
 
 
@@ -43,7 +42,7 @@ function startGame() {
 
         if (contatore == 84) {
             alert("Complimenti hai vinto, non hai calpestato nessuna mina, hai fatto punteggio massimo");
-            partitaConclusa == true;
+            partitaConclusa = true;
         }
 
         if (partitaConclusa) {
